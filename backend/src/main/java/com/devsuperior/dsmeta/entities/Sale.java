@@ -20,10 +20,10 @@ public class Sale {
 	private Integer deals;
 	private Double amount;
 	private LocalDate date;
-	
+
 	public Sale() {
 	}
-	
+
 	public Sale(Long id, String sellerName, Integer visited, Integer deals, Double amount, LocalDate date) {
 		this.id = id;
 		this.sellerName = sellerName;
@@ -55,5 +55,12 @@ public class Sale {
 
 	public LocalDate getDate() {
 		return date;
+	}
+
+	public String getMessage() {
+		String msg = "O vendedor " + this.sellerName + " foi destaque em " + date.getMonthValue() + "/" + date.getYear()
+				+ " com um total de R$ " + String.format("%.2f", this.amount);
+
+		return msg;
 	}
 }
