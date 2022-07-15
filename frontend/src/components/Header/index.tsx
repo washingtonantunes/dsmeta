@@ -1,8 +1,8 @@
-import logo from '../../assets/img/logo.svg'
+import logo from '../../assets/img/logo.svg';
 
-import './style.css'
+import './style.css';
 
-function App() {
+function Header() {
     return (
         <header>
             <div className="dsmeta-logo-container">
@@ -17,4 +17,4 @@ function App() {
     )
 }
 
-export default App
+export default Header;
