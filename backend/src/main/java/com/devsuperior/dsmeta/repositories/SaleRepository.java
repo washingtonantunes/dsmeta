@@ -1,4 +1,4 @@
-package com.devsuperior.dsmeta.entities.repositories;
+package com.devsuperior.dsmeta.repositories;
 
 import java.time.LocalDate;
 
